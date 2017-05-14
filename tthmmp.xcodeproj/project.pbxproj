@@ -16,6 +16,7 @@
 		6F59F6CE1EC8C427007D0E04 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F6C81EC8C427007D0E04 /* Project.swift */; };
 		6F59F6CF1EC8C427007D0E04 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F6C91EC8C427007D0E04 /* ProjectStore.swift */; };
 		6F59F6D01EC8C427007D0E04 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59F6CA1EC8C427007D0E04 /* ProjectsViewController.swift */; };
+		B4D5EAF2EAA81E1F3640F12E /* Pods_tthmmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99052053B5516CDAAB0F3014 /* Pods_tthmmp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		6F59F6C81EC8C427007D0E04 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		6F59F6C91EC8C427007D0E04 /* ProjectStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
 		6F59F6CA1EC8C427007D0E04 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		99052053B5516CDAAB0F3014 /* Pods_tthmmp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tthmmp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D4285F89F6F628C7E0CBE8 /* Pods-tthmmp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tthmmp.release.xcconfig"; path = "Pods/Target Support Files/Pods-tthmmp/Pods-tthmmp.release.xcconfig"; sourceTree = "<group>"; };
+		BF0E636EAF7CD95EEFC9BEFE /* Pods-tthmmp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tthmmp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tthmmp/Pods-tthmmp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D5EAF2EAA81E1F3640F12E /* Pods_tthmmp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				6F59F6AF1EC8C307007D0E04 /* tthmmp */,
 				6F59F6AE1EC8C307007D0E04 /* Products */,
+				CD262AB6F6B72B22B18152E5 /* Pods */,
+				C6DE23A43DC659D04A01A613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = tthmmp;
 			sourceTree = "<group>";
 		};
+		C6DE23A43DC659D04A01A613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99052053B5516CDAAB0F3014 /* Pods_tthmmp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD262AB6F6B72B22B18152E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF0E636EAF7CD95EEFC9BEFE /* Pods-tthmmp.debug.xcconfig */,
+				A4D4285F89F6F628C7E0CBE8 /* Pods-tthmmp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F59F6BF1EC8C307007D0E04 /* Build configuration list for PBXNativeTarget "tthmmp" */;
 			buildPhases = (
+				F797EFCFB648381B4FCA38AB /* [CP] Check Pods Manifest.lock */,
 				6F59F6A91EC8C307007D0E04 /* Sources */,
 				6F59F6AA1EC8C307007D0E04 /* Frameworks */,
 				6F59F6AB1EC8C307007D0E04 /* Resources */,
+				D4BCFC2557C9E03C23DD0CAC /* [CP] Embed Pods Frameworks */,
+				D61C903A3338938685BD0F26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4BCFC2557C9E03C23DD0CAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tthmmp/Pods-tthmmp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61C903A3338938685BD0F26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tthmmp/Pods-tthmmp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F797EFCFB648381B4FCA38AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F59F6A91EC8C307007D0E04 /* Sources */ = {
@@ -275,6 +350,7 @@
 		};
 		6F59F6C01EC8C307007D0E04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0E636EAF7CD95EEFC9BEFE /* Pods-tthmmp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -289,6 +365,7 @@
 		};
 		6F59F6C11EC8C307007D0E04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D4285F89F6F628C7E0CBE8 /* Pods-tthmmp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
