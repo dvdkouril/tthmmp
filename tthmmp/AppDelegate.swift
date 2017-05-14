@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  tthmmp
 //
-//  Created by David Kouril on 14/05/2017.
-//  Copyright © 2017 David Kouřil. All rights reserved.
+//  Created by David Kouřil on 02/04/2017.
+//  Copyright © 2017 dvdkouril. All rights reserved.
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let projectStore = ProjectStore()
+        let navController = window!.rootViewController as! UINavigationController
+        let projectsController = navController.topViewController as! ProjectsViewController
+        projectsController.projectStore = projectStore
+        
         return true
     }
 
@@ -27,10 +34,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        let navController = window!.rootViewController as! UINavigationController
+        let projectsController = navController.topViewController as! ProjectsViewController
+        projectsController.saveState()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+        let navController = window!.rootViewController as! UINavigationController
+        let projectsController = navController.topViewController as! ProjectsViewController
+        projectsController.restoreState()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
