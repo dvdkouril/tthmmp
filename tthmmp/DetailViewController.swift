@@ -11,8 +11,8 @@ import UIKit
 class DetailViewController : UIViewController {
     
     @IBOutlet var nameField: UILabel!
-    //@IBOutlet var descriptionField: UILabel!
     @IBOutlet var descriptionField: UITextView!
+    @IBOutlet var statusLabel: UILabel!
     
     var project: Project!
     
@@ -20,8 +20,8 @@ class DetailViewController : UIViewController {
         super.viewWillAppear(animated)
         
         nameField.text = project.name
-//        descriptionField.text = project.description
         descriptionField.text = project.detailDescription
+        statusLabel.text = project.status.description
         
         self.navigationItem.title = "Project"
     }

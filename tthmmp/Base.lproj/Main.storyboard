@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-5N-cu8">
-                                <rect key="frame" x="26" y="74" width="323" height="267.5"/>
+                                <rect key="frame" x="26" y="74" width="323" height="303"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DVDKOURIL blog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loy-at-gDp">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="36"/>
@@ -92,6 +92,23 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FTk-Jl-Psd">
+                                        <rect key="frame" x="0.0" y="282.5" width="323" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-yc-uCh">
+                                                <rect key="frame" x="0.0" y="0.0" width="274.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-sN-nxo">
+                                                <rect key="frame" x="275.5" y="0.0" width="47.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -105,6 +122,7 @@
                     <connections>
                         <outlet property="descriptionField" destination="Alq-Jh-de4" id="o3a-ue-1Fk"/>
                         <outlet property="nameField" destination="loy-at-gDp" id="ycg-NI-0ia"/>
+                        <outlet property="statusLabel" destination="wBM-sN-nxo" id="Zp9-9c-vZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdE-Pn-uEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,7 +168,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-Wo-xiw">
-                                <rect key="frame" x="26" y="48" width="323" height="149"/>
+                                <rect key="frame" x="26" y="48" width="323" height="415.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEP-QM-Ugw">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="20.5"/>
@@ -176,6 +194,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2y-XU-yLl">
+                                        <rect key="frame" x="0.0" y="164" width="323" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-Df-qCf">
+                                        <rect key="frame" x="0.0" y="199" width="323" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Ah5-BI-199" id="xAb-x3-mif"/>
+                                            <outlet property="delegate" destination="Ah5-BI-199" id="pgD-cU-SEz"/>
+                                        </connections>
+                                    </pickerView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -195,6 +226,7 @@
                     <connections>
                         <outlet property="descriptionField" destination="kpp-fh-yXW" id="EXy-c3-qPO"/>
                         <outlet property="nameField" destination="AeN-Ye-NdE" id="NGl-ug-kIg"/>
+                        <outlet property="pickerView" destination="UU3-Df-qCf" id="mQs-OK-Bp2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZC-WG-pOn" userLabel="First Responder" sceneMemberID="firstResponder"/>

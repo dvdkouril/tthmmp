@@ -38,7 +38,7 @@ class ProjectStore {
         let blogProject = Project()
         blogProject.name = "DVDKOURIL blog"
         blogProject.detailDescription = "Blog that I write about my life"
-        blogProject.status = .Finished
+        blogProject.status = .Active
         allProjects.append(blogProject)
         
     }
@@ -75,4 +75,5 @@ class ProjectStore {
         let proj = getProjects(with: status)[index]
         return allProjects.index(of: proj)!
     }
+    
 }
