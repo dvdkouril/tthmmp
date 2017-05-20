@@ -11,7 +11,8 @@ import UIKit
 class AddProjectViewController : UIViewController {
     
     @IBOutlet var nameField: UITextField!
-    @IBOutlet var descriptionField: UITextField!
+    //@IBOutlet var descriptionField: UITextField!
+    @IBOutlet var descriptionField: UITextView!
     
     var returnViewController : ProjectsViewController!
     
