@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = window!.rootViewController as! UINavigationController
         let projectsController = navController.topViewController as! ProjectsViewController
         projectsController.projectStore = projectStore
+        projectStore.initWithSampleData()
         
         return true
     }

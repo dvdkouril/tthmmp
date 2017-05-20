@@ -27,6 +27,22 @@ class ProjectStore {
 //        }
 //    }
     
+    func initWithSampleData()
+    {
+        let masterThesisProject = Project()
+        masterThesisProject.name = "Master Thesis"
+        masterThesisProject.detailDescription = "Finish Masters degree from Computer Graphics at Masaryks University"
+        masterThesisProject.status = .Finished
+        allProjects.append(masterThesisProject)
+        
+        let blogProject = Project()
+        blogProject.name = "DVDKOURIL blog"
+        blogProject.detailDescription = "Blog that I write about my life"
+        blogProject.status = .Finished
+        allProjects.append(blogProject)
+        
+    }
+    
     func addProject(project: Project)
     {
         allProjects.append(project)

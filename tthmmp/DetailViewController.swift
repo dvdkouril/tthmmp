@@ -11,7 +11,8 @@ import UIKit
 class DetailViewController : UIViewController {
     
     @IBOutlet var nameField: UILabel!
-    @IBOutlet var descriptionField: UILabel!
+    //@IBOutlet var descriptionField: UILabel!
+    @IBOutlet var descriptionField: UITextView!
     
     var project: Project!
     
