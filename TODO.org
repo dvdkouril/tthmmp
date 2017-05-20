@@ -1,0 +1,7 @@
+* Tool To Help Me Manage Project - TODO list
+
+** Features
+*** DONE Status setting
+**** DONE Status picker when creating
+**** DONE Status label in detail
+*** TODO Editing existing projects
