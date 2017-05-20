@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -75,18 +76,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-5N-cu8">
-                                <rect key="frame" x="72" y="72" width="240" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-5N-cu8">
+                                <rect key="frame" x="26" y="74" width="323" height="267.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DVDKOURIL blog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loy-at-gDp">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DVDKOURIL blog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loy-at-gDp">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8hJ-RZ-dE8">
-                                        <rect key="frame" x="0.0" y="51" width="240" height="128"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Alq-Jh-de4">
+                                        <rect key="frame" x="0.0" y="51" width="323" height="216.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -96,15 +96,20 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qcJ-5N-cu8" firstAttribute="leading" secondItem="kWL-us-Gcx" secondAttribute="leadingMargin" constant="10" id="A9J-Ru-bhT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qcJ-5N-cu8" secondAttribute="trailing" constant="10" id="AuX-8n-15m"/>
+                            <constraint firstItem="qcJ-5N-cu8" firstAttribute="top" secondItem="fS1-3j-rCs" secondAttribute="bottom" constant="10" id="Op3-oG-EL3"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="descriptionField" destination="8hJ-RZ-dE8" id="WWe-rl-SAQ"/>
+                        <outlet property="descriptionField" destination="Alq-Jh-de4" id="o3a-ue-1Fk"/>
                         <outlet property="nameField" destination="loy-at-gDp" id="ycg-NI-0ia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdE-Pn-uEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695.2" y="46.326836581709152"/>
+            <point key="canvasLocation" x="1693.5999999999999" y="47.226386806596707"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="A45-Rx-KXm">
