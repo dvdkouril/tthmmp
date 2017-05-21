@@ -27,7 +27,6 @@ enum ProjectStatus: Int, CustomStringConvertible {
     }
 }
 
-//class Project: NSObject {
 class Project: Object {
     dynamic var name : String?
     dynamic var detailDescription : String?
