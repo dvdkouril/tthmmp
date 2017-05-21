@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3DC2381ED1F01800F5BBE6 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3DC2371ED1F01800F5BBE6 /* GoalsViewController.swift */; };
 		6F59F6B81EC8C307007D0E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F59F6B71EC8C307007D0E04 /* Assets.xcassets */; };
 		6F59F6BB1EC8C307007D0E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F59F6B91EC8C307007D0E04 /* LaunchScreen.storyboard */; };
 		6F59F6C41EC8C40C007D0E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F59F6C21EC8C40C007D0E04 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F3DC2371ED1F01800F5BBE6 /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		6F59F6AD1EC8C307007D0E04 /* tthmmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tthmmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59F6B71EC8C307007D0E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F59F6BA1EC8C307007D0E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,12 +71,13 @@
 		6F59F6AF1EC8C307007D0E04 /* tthmmp */ = {
 			isa = PBXGroup;
 			children = (
+				6F59F6CA1EC8C427007D0E04 /* ProjectsViewController.swift */,
+				6F3DC2371ED1F01800F5BBE6 /* GoalsViewController.swift */,
 				6F59F6C51EC8C427007D0E04 /* AddProjectViewController.swift */,
 				6F59F6C61EC8C427007D0E04 /* AppDelegate.swift */,
 				6F59F6C71EC8C427007D0E04 /* DetailViewController.swift */,
 				6F59F6C81EC8C427007D0E04 /* Project.swift */,
 				6F59F6C91EC8C427007D0E04 /* ProjectStore.swift */,
-				6F59F6CA1EC8C427007D0E04 /* ProjectsViewController.swift */,
 				6F59F6C21EC8C40C007D0E04 /* Main.storyboard */,
 				6F59F6B71EC8C307007D0E04 /* Assets.xcassets */,
 				6F59F6B91EC8C307007D0E04 /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3DC2381ED1F01800F5BBE6 /* GoalsViewController.swift in Sources */,
 				6F59F6D01EC8C427007D0E04 /* ProjectsViewController.swift in Sources */,
 				6F59F6CD1EC8C427007D0E04 /* DetailViewController.swift in Sources */,
 				6F59F6CF1EC8C427007D0E04 /* ProjectStore.swift in Sources */,
@@ -396,6 +400,7 @@
 				6F59F6C11EC8C307007D0E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

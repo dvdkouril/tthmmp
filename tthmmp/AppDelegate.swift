@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let projectStore = ProjectStore()
-        let navController = window!.rootViewController as! UINavigationController
+        //let navController = window!.rootViewController as! UINavigationController
+        let tabBarController = window!.rootViewController as! UITabBarController
+        let navController = tabBarController.selectedViewController as! UINavigationController
         let projectsController = navController.topViewController as! ProjectsViewController
         projectsController.projectStore = projectStore
         projectStore.initWithSampleData()
