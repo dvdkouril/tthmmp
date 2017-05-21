@@ -11,22 +11,6 @@ import UIKit
 class ProjectStore {
     var allProjects = [Project]()
     
-//    var activeProjects : [Project] {
-//        var ret = [Project]()
-//        for proj in allProjects {
-//            if proj.status == .Active {
-//                ret.append(proj)
-//            }
-//        }
-//        return ret
-//    }
-    
-//    init() {
-//        for _ in 0..<5 {
-//            createProject()
-//        }
-//    }
-    
     func initWithSampleData()
     {
         let masterThesisProject = Project()
@@ -40,6 +24,12 @@ class ProjectStore {
         blogProject.detailDescription = "Blog that I write about my life"
         blogProject.status = .Active
         allProjects.append(blogProject)
+        
+        let germanProject = Project()
+        germanProject.name = "Learning German"
+        germanProject.detailDescription = "I want to learn German to be able to get around in Austria"
+        germanProject.status = .Active
+        allProjects.append(germanProject)
         
     }
     
