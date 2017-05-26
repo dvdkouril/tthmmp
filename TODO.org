@@ -6,6 +6,7 @@
 *** TODO Configure tab bar items
 *** TODO Implement Delete action on Projects
 *** TODO Implement Edit action on Projects
+*** TODO Design and implement splash screen
 *** TODO Implement Goals tab
 **** TODO Implement adding goals
 **** TODO Implement showing goal details
