@@ -13,5 +13,7 @@ class GoalsViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Goals"
     }
 }
