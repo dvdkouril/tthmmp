@@ -21,10 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let projectStore = ProjectStore()
         //let navController = window!.rootViewController as! UINavigationController
         let tabBarController = window!.rootViewController as! UITabBarController
-        let navController = tabBarController.selectedViewController as! UINavigationController
-        let projectsController = navController.topViewController as! ProjectsViewController
-        projectsController.projectStore = projectStore
-        projectStore.initWithSampleData()
+        
+        for vc in tabBarController.viewControllers! {
+            if let navController = vc as? UINavigationController {
+                if let projectsController = navController.topViewController as? ProjectsViewController {
+                    projectsController.projectStore = projectStore
+                    projectStore.initWithSampleData()
+                }
+            }
+        }
+        
+//        let navController = tabBarController.selectedViewController as! UINavigationController
+//        let projectsController = navController.topViewController as! ProjectsViewController
+//        projectsController.projectStore = projectStore
+//        projectStore.initWithSampleData()
         
         return true
     }

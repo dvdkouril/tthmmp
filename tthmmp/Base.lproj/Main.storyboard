@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="2632.8000000000002" y="47.226386806596707"/>
         </scene>
-        <!--Goals View Controller-->
+        <!--Item-->
         <scene sceneID="H6J-m0-BAP">
             <objects>
                 <tableViewController id="Nna-aO-HLW" customClass="GoalsViewController" customModule="tthmmp" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,10 +153,11 @@
                             <outlet property="delegate" destination="Nna-aO-HLW" id="ct5-9k-k0p"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ot4-cp-HUP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAy-Tz-N9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911" y="786"/>
+            <point key="canvasLocation" x="911" y="812"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="A45-Rx-KXm">
@@ -292,6 +293,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="aGy-wS-dxa" kind="relationship" relationship="viewControllers" id="1s7-Jg-zMO"/>
+                        <segue destination="Nna-aO-HLW" kind="relationship" relationship="viewControllers" id="Fd7-vh-c0b"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiX-Wl-eHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

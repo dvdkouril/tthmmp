@@ -1,5 +1,9 @@
 * Tool To Help Me Manage Project - TODO list
 
+** 2017-05-26
+*** TaskTree
+*** DONE Fix the crash upon start (expecting navigation controller but getting tabbarcontroller)
+
 ** Features
 *** DONE Status setting
 **** DONE Status picker when creating
