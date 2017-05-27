@@ -4,6 +4,8 @@
 *** TaskTree
 *** DONE Fix the crash upon start (expecting navigation controller but getting tabbarcontroller)
 *** TODO Configure tab bar items
+**** TODO Set titles
+**** TODO Create icons
 *** TODO Implement Delete action on Projects
 *** TODO Implement Edit action on Projects
 *** TODO Design and implement splash screen

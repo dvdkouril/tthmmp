@@ -303,11 +303,11 @@
             </objects>
             <point key="canvasLocation" x="-28" y="47.226386806596707"/>
         </scene>
-        <!--Goals-->
+        <!--Navigation Controller-->
         <scene sceneID="MJ8-gx-sya">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z8m-DK-kzV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Goals" id="Ot4-cp-HUP"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Ot4-cp-HUP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V34-qr-euk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
