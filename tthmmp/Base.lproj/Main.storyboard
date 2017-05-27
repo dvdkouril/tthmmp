@@ -233,7 +233,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-Df-qCf">
-                                        <rect key="frame" x="0.0" y="199" width="323" height="216"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="323" height="216"/>
                                         <connections>
                                             <outlet property="dataSource" destination="Ah5-BI-199" id="xAb-x3-mif"/>
                                             <outlet property="delegate" destination="Ah5-BI-199" id="pgD-cU-SEz"/>
@@ -265,11 +265,11 @@
             </objects>
             <point key="canvasLocation" x="2782" y="-315"/>
         </scene>
-        <!--Item-->
+        <!--Projects-->
         <scene sceneID="7ze-YD-mCJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGy-wS-dxa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ibq-J5-GQV"/>
+                    <tabBarItem key="tabBarItem" title="Projects" id="ibq-J5-GQV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhB-8y-FCD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -290,6 +290,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Yar-1z-2bh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="iIj-To-Q9J">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -302,11 +303,11 @@
             </objects>
             <point key="canvasLocation" x="-28" y="47.226386806596707"/>
         </scene>
-        <!--Item-->
+        <!--Goals-->
         <scene sceneID="MJ8-gx-sya">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z8m-DK-kzV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ot4-cp-HUP"/>
+                    <tabBarItem key="tabBarItem" title="Goals" id="Ot4-cp-HUP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V34-qr-euk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
