@@ -81,6 +81,16 @@ class ProjectsViewController: UITableViewController {
             return "Error"
         }
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            //projectStore.delete
+            var projToDelete = projectStore.getProjects(with: ProjectStatus(rawValue: indexPath.section)!)[indexPath.row]
+            var i = projectStore.allProjects.index(of: projToDelete)
+            projectStore.allProjects.remove(at: i!)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+    }
 
     // MARK: - Navigation
 
