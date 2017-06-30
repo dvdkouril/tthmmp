@@ -13,6 +13,7 @@ class DetailViewController : UIViewController {
     @IBOutlet var nameField: UILabel!
     @IBOutlet var descriptionField: UITextView!
     @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var stackView: UIStackView!
     
     var project: Project!
     
@@ -22,6 +23,12 @@ class DetailViewController : UIViewController {
         nameField.text = project.name
         descriptionField.text = project.detailDescription
         statusLabel.text = project.status.description
+        
+        for goal in project.reasonsAndGoals {
+            let goalLabel = UILabel()
+            goalLabel.text = goal.name
+            stackView.addArrangedSubview(goalLabel)
+        }
         
         self.navigationItem.title = "Project"
     }

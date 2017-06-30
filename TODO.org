@@ -1,10 +1,20 @@
 * Tool To Help Me Manage Project - TODO list
+** 2017-06-24
+*** TaskTree
+*** TODO Configure tab bar items
+**** TODO Create icons
+*** TODO Implement Delete action on Projects
+*** TODO Implement Edit action on Projects
+*** TODO Design and implement splash screen
+*** TODO Implement Goals tab
+**** TODO Implement adding goals
+**** TODO Implement showing goal details
 
 ** 2017-05-26
 *** TaskTree
 *** DONE Fix the crash upon start (expecting navigation controller but getting tabbarcontroller)
 *** TODO Configure tab bar items
-**** TODO Set titles
+**** DONE Set titles
 **** TODO Create icons
 *** TODO Implement Delete action on Projects
 *** TODO Implement Edit action on Projects
